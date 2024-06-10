@@ -1,0 +1,68 @@
+
+/* Adjust styles as needed */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding-top: 3.5rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background-color: #eee;
+}
+
+.sidebar .sub-menu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sidebar .sub-menu.show {
+    display: block;
+}
+
+.main-content {
+    margin-left: 250px; /* Should match the width of the sidebar */
+    transition: all 0.3s ease;
+}
+
+/* For smaller screens, adjust styles to toggle sidebar visibility */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        padding-top: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+/* echo '<div class="card">';
+echo '<div class="card-body">';
+echo '<h5 class="card-title">' . $row['product_name'] . '</h5>';
+echo '<p class="card-text">Price: $' . $row['price'] . '</p>';
+echo '<div class="input-group">';
+echo '<span class="input-group-btn">';
+echo '<button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quantity_' . $row['product_id'] . '">';
+echo '<span class="glyphicon glyphicon-minus">-</span>';
+echo '</button>';
+echo '</span>';
+echo '<input type="text" id="quantity_' . $row['product_id'] . '" class="form-control input-number" value="0" min="0">';
+echo '<span class="input-group-btn">';
+echo '<button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantity_' . $row['product_id'] . '">';
+echo '<span class="glyphicon glyphicon-plus">+</span>';
+echo '</button>';
+echo '</span>';
+echo '<button onclick="addToCart(' . $row['product_id'] . ')" class="btn btn-primary">Add to Cart</button>';
+echo '</div>';
+echo '</div>';
+echo '</div>'; */

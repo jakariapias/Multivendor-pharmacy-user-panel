@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#loginBackgroundImg {
+  height: 100vh;
+  background-image: url("../img/loginImg/loginImg3.jpg");
+  background-size: cover;
+}
+.loginCard {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loginForm,
+#registerForm,
+#reset-password-form {
+  background-color: white;
+  padding: 20px 17px;
+  border-radius: 10px;
+}
+#loginForm,
+#reset-password-form,
+#registerForm input {
+  width: 350px;
+}
+.stickyNav {
+  background-color: white;
+  top: 0;
+  position: sticky;
+  z-index: 6;
+}
+.sliderImg {
+  height: 400px;
+  object-fit: cover;
+}
+.options {
+  padding: 13px;
+  margin: 7px 0px;
+  background: #f8f5f57d;
+  border-radius: 7px;
+  font-weight: 600;
+}
+.options:hover {
+  background: #213704;
+  color: white;
+}
+.footer-about-list li a {
+  color: white !important;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid #b9997c;
+  border-radius: 9px;
+  margin-right: 8px;
+}
+.social-link:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.fb {
+  width: 35px;
+  color: #b9997c;
+  font-size: 20px;
+}
+.twitter {
+  width: 35px;
+  color: #b9997c;
+  font-size: 20px;
+}
+.instagram {
+  width: 35px;
+  color: #b9997c;
+  font-size: 25px;
+}
+
+.fb:hover {
+  color: #0776e8;
+  border: 2px solid white;
+}
+.twitter:hover {
+  color: #1d9bf0;
+  border: 2px solid white;
+}
+.instagram:hover {
+  border: 2px solid white;
+  color: #e6008b;
+}
+.serviceIcons {
+  font-size: 60px;
+  margin-right: 20px;
+  color: #4caf6a;
+}
+.aboutList {
+  font-size: 18px;
+}
+.customAboutList li::marker {
+  color: #75aa22;
+  font-size: 20px;
+}
+a {
+  text-decoration: none !important;
+}
+
+.navArea {
+  width:75%;
+}
+
+.brandName{
+  font-weight:700; 
+  font-size:35px;
+}
+.brandNameSideTextArea{
+  line-height: 0.85;
+}
+.cartIconWeb{
+  display:block;
+}
+.cartIconMobile{
+  display:none;
+}
+
+
+
+/* added in shop.php */
+/* Custom styles for overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1; /* Ensure the overlay is above other elements */
+}
+
+/* Add padding to the overlay content */
+.overlay-content {
+  padding: 20px;
+  color: white; /* Change text color as needed */
+}
+
+/* Add custom styles for the small toggler button */
+.custom-toggler {
+  padding: .25rem .5rem; /* Customize padding as needed */
+  font-size: 80%; /* Adjust font size as needed */
+  line-height: 1; /* Ensure the button's height is not affected by line-height */
+}
+
+#avatarSection{
+  display: block;
+}
+.avatarSectionListItems{
+  display: none;
+}
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  #avatarSection{
+    display: none;
+  }
+  .avatarSectionListItems{
+    display: block;
+  }
+ 
+  /* Additional styles for smaller screens go here */
+}
+
+/* Responsive styles for even smaller screens */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  #cartIcon{
+    font-size:15px
+  }
+  .brandName{
+    font-size: 26px;
+  }
+  .brandNameSideText{
+    font-size:13px
+  }
+  .brandNameSideTextArea{
+    line-height: 0.58;
+  }
+  .navArea {
+    width:90%;
+  }
+
+  .cartIconWeb{
+    display:none;
+  }
+  .cartIconMobile{
+    display:block;
+  }
+
+  #avatarSection{
+    display: none;
+  }
+  .avatarSectionListItems{
+    display: block;
+  }
+ 
+  
+
+
+  /* Additional styles for even smaller screens go here */
+}
+
